@@ -9,6 +9,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -30,5 +31,8 @@ dependencies {
     implementation 'com.google.android.gms:play-services-ads:12.0.1'
 
     // MoPub
+    implementation('com.mopub:mopub-sdk:4.16.0@aar')
     implementation('com.mopub:mopub-sdk-native-static:4.16.0@aar')
+    implementation('com.mopub:mopub-sdk-base:4.16.0@aar')
+    implementation('com.mopub.volley:mopub-volley:1.1.0')
 }

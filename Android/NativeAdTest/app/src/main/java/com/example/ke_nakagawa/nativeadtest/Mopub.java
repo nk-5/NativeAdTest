@@ -34,7 +34,7 @@ public class Mopub extends AppCompatActivity {
                 .desiredAssets(desiredAssets)
                 .build();
 
-        final ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+        final ArrayAdapter<String> adapter = new ArrayAdapter<String>(this.getApplicationContext(),
                 android.R.layout.simple_list_item_1);
         for (int i = 0; i < 100; ++i) {
             adapter.add("Item " + i);
@@ -55,6 +55,6 @@ public class Mopub extends AppCompatActivity {
         listView.setAdapter(adAdapter);
 
         // TODO: set adUnitId
-        adAdapter.loadAds("adUnitId", requestParameters);
+        adAdapter.loadAds("11a17b188668469fb0412708c3d16813", requestParameters);
     }
 }
